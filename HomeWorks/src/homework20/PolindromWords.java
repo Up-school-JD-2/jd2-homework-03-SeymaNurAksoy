@@ -33,14 +33,11 @@ public class PolindromWords {
 			}
 			for (int i = 0; i < ch.length - 1; i++) {
 				if (Arrays.equals(ch, chTCopy)) {
-					System.out.println("Polindrom Kelime .");
-
+					System.out.println("Polindrom Kelimedir .");
 					break;
 				} else {
 					System.out.println("Polindrom Kelime Değil.");
-
 					break;
-
 				}
 			}
 			System.out.println(
