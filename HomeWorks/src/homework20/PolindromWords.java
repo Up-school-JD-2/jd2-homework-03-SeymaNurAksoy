@@ -1,5 +1,6 @@
 package homework20;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class PolindromWords {
@@ -31,19 +32,21 @@ public class PolindromWords {
 				System.out.print("[" + c + "]");
 			}
 			for (int i = 0; i < ch.length - 1; i++) {
-				if (ch[i] != chTCopy[i]) {
-					System.out.println("Polindrom Kelime Değil.");
+				if (Arrays.equals(ch, chTCopy)) {
+					System.out.println("Polindrom Kelime .");
+
 					break;
 				} else {
-					System.out.println("Polindrom Kelime .");
+					System.out.println("Polindrom Kelime Değil.");
+
 					break;
 
 				}
 			}
 			System.out.println(
-					"Devam Etmek istemez iseniz 'e' olarak belirtiniz, devam etmek için 'h' olarak belirtiniz");
+					"Devam Etmek istemez iseniz 'h' olarak belirtiniz, devam etmek için 'e' olarak belirtiniz");
 			String quitE = scan.next();
-			if (quitE.equals("e")) {
+			if (quitE.equals("h")) {
 				quit = true;
 				System.out.println("Görüşmek üzere çıkış yaptınız.");
 
